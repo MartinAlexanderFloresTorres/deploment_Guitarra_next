@@ -1,0 +1,50 @@
+.article {
+  display: block;
+  height: 100%;
+  box-shadow: 0 0 10px 1px rgb(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.contenido {
+  width: 100%;
+  padding: 20px;
+}
+.titulo {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.fecha {
+  font-size: 16px;
+  color: var(--primary);
+}
+.resumen {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.link {
+  display: block;
+  text-decoration: none;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 10px;
+  text-align: center;
+  transition: 0.3s ease all;
+  border-radius: 5px;
+}
+.link:hover {
+  color: var(--blanco);
+  background: var(--primary);
+}
+.entrada{
+  max-width: 80rem;
+  margin: 0 auto;
+}
+.texto{
+  white-space: pre-wrap;
+}

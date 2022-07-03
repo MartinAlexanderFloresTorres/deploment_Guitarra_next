@@ -1,0 +1,123 @@
+.header {
+  background-image: linear-gradient(to right, rgb(0 0 0 /0.8), rgb(0 0 0 / 0.7)),
+    url("../public//img//header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5rem 0;
+  position: relative;
+}
+.barra {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.navegacion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.navegacion a {
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  transition: 0.3s ease all;
+  border-radius: 5px;
+}
+.navegacion a:hover {
+  color: var(--primary);
+}
+.navegacion a{
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 780px) {
+  .barra {
+    flex-direction: column;
+    text-transform: uppercase;
+  }
+  .navegacion {
+    margin-top: 20px;
+  }
+}
+.modelo {
+  color: var(--blanco);
+  margin-top: 5rem;
+  text-align: center;
+}
+.modelo h1 {
+  font-size: 6rem;
+  margin-bottom: 20px;
+}
+.modelo > p:first-of-type {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  font-size: 18px;
+}
+.precio {
+  font-size: 5rem;
+  color: var(--primary);
+  font-weight: 800;
+  margin: 10px 0;
+}
+.link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-align: center;
+  transition: 0.3s ease all;
+}
+.link:hover {
+  color: var(--blanco);
+  background: var(--primary);
+}
+.guitarra {
+  display: none;
+}
+@media (min-width: 992px) {
+  .modelo {
+    text-align: left;
+    width: 50%;
+  }
+  .link {
+    width: fit-content;
+  }
+  .guitarra {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 380px;
+    animation: translader 1.4s ease forwards;
+    opacity: 0;
+  }
+}
+@keyframes translader {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(normal);
+  }
+}
